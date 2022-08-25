@@ -361,6 +361,45 @@ section {
   color: var(--field-background-color)
 }
 
+/*** SECTION 05 Dungeons & Dragons subscriptions ***/
+
+#section-subscriptions .subs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+#section-subscriptions .subs-container button {
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.section-subscriptions .subs-container button:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+}
+
+#table-container {
+  background-color: var(--primary-color);
+  color: var(--primary-color-contrast);
+  outline: 20px solid var(--highlight-color);
+  border: 3px solid var(--primary-color);
+}
+
+#table-container table {
+  border: 10px solid var(--highlight-color);
+}
+
+#table-container table td {
+  padding: 2px 16px;
+}
+
+.not-show {
+  display: none;
+}
+
 /*** FOOTER STYLES ***/
 
 footer {

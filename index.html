@@ -123,7 +123,7 @@
             <input type="email" name="email" id="txtEmail">
         
             <label for="level">Level</label>
-            <input type="text" name="level" id="txtLevel">
+            <input type="number" name="level" id="txtLevel">
         
             <label for="character">Personagem</label>
             <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
@@ -132,6 +132,17 @@
           </form>
         </div>
       </div>
+    </section>
+
+    <section id="section-subscriptions">
+      <div class="subs-container">
+        <button type="button" id="btnSubscriptions">Ver inscritos</button>
+        
+        <div id="table-container" class="not-show">
+          <table id="subscriptions"></table> 
+        </div>
+      </div>
+      
     </section>
   </main>
 
@@ -143,8 +154,7 @@
 
     <img src="assets/images/footer/logo.svg" alt="logotipo DIO">
   </footer>
-
-  <script type="module" src="./assets/js/main.js"></script>
+  
   <script>
     window.addEventListener('click', function() {
       const audio = document.getElementById('music');
@@ -164,5 +174,7 @@
       audio.volume = 0.2;
     }
   </script>
+
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
